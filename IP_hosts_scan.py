@@ -13,7 +13,8 @@ print("====================================开 始 匹 配======================
 for iplist in open("ip.txt"):
     ip = iplist.strip('\n')
     #读取host地址
-    http_s = ['http://','https://']
+    # http_s = ['http://','https://']
+    http_s = ['http://']
     for h in http_s :
         for d in open("top-3k-domain.txt",'r'):
             d=d.strip('\n') 
